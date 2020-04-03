@@ -1,0 +1,351 @@
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'UbuntuRegular';
+
+    margin: 0;
+}
+
+/*Sections of page*/
+
+.page
+{
+    position: relative;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.page-top
+{
+    border-top: 1px solid #c2c2c2;
+}
+
+.page h2
+{
+    font-size: 14px;
+    font-weight: 300;
+
+    position: absolute;
+    top: -24px;
+
+    padding: 5px 15px;
+
+    text-transform: uppercase;
+
+    color: #c2c2c2;
+    background-color: #fff;
+}
+
+.container
+{
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/*Header*/
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    font-size: 24px;
+    font-weight: 700;
+
+    display: flex;
+    flex-direction: row;
+
+    text-decoration: none;
+
+    color: #202020;
+
+    align-items: center;
+}
+
+.logo_img
+{
+    display: block;
+
+    width: 58px;
+    height: 58px;
+    margin-right: 23px;
+
+    background-image: url(../images/logo.svg);
+}
+
+.nav
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+
+    display: flex;
+    flex-direction: row;
+
+    list-style-type: none;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav li
+{
+    margin-left: 38px;
+}
+
+.nav li a
+{
+    transition: color .2s linear;
+    text-decoration: none;
+
+    color: #202020;
+}
+
+.nav li a:hover
+{
+    color: #5528ff;
+}
+
+.nav-btn
+{
+    font-weight: 700;
+
+    padding: 4px 16px;
+
+    transition: color, background-color .2s linear;
+
+    color: #fff;
+    border: 1px solid #5528ff;
+    border-radius: 5px;
+    background-color: #5528ff;
+}
+
+.nav-btn:hover
+{
+    color: #5528ff;
+    background-color: #fff;
+}
+
+/*About us*/
+
+.abtus_title
+{
+    font-size: 57px;
+    font-weight: 700;
+
+    color: #202020;
+}
+
+.abtus_text
+{
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 51px;
+
+    width: 741px;
+
+    color: #4f4f4f;
+}
+
+.abtus_button
+{
+    font-size: 24px;
+    font-weight: 300;
+
+    padding: 16px 60px;
+
+    transition: color, background-color .2s linear;
+
+    color: #fff;
+    border: 1px solid #5528ff;
+    border-radius: 10px;
+    background-color: #5528ff;
+}
+
+.abtus_button:hover
+{
+    color: #5528ff;
+    background-color: #fff;
+}
+
+/*Our services*/
+
+.services
+{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 258px;
+}
+
+.services-item
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-img
+{
+    display: flex;
+    flex-direction: row;
+
+    width: 120px;
+
+    justify-content: center;
+}
+
+.services-text
+{
+    width: calc(100% - 120px);
+}
+
+.services-item h3
+{
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.services-item p
+{
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #b2b2b2;
+}
+
+/*Clients*/
+
+.clients
+{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 48px;
+}
+
+.clients-item
+{
+    text-align: center;
+}
+
+/*Team*/
+
+.team
+{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 59px;
+}
+
+.team-item
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.team-img
+{
+    width: 170px;
+
+    text-align: center;
+}
+
+.team-text h1
+{
+    font-size: 28px;
+    font-weight: 700;
+
+    width: calc(100% - 170px);
+}
+
+.team-text p
+{
+    font-size: 14px;
+    font-weight: 300;
+
+    color: #b2b2b2;
+}
+
+/*Footer*/
+
+.footer
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #f7f7f7;
+}
+
+.box-footer
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social
+{
+    display: flex;
+
+    padding-left: 0;
+
+    list-style-type: none;
+}
+
+.social li
+{
+    margin-left: 40px;
+}
+
+.social li a
+{
+    font-size: 24px;
+
+    text-decoration: none;
+
+    color: #b2b2b2;
+}
+
+/*Fonts*/
+
+@font-face
+{
+    font-family: 'UbuntuRegular';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+
